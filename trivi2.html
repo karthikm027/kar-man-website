@@ -1,0 +1,256 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 2000, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  <script>
+  function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "Harry Potter");
+    if (person == null || person == "") {
+      txt = "User cancelled the prompt.";
+    } else {
+      txt = "Hello " + person + "! How are you today?";
+    }
+    document.getElementById("demo").innerHTML = txt;
+  }
+  </script>
+  <style>
+  #section1 {
+    height: 600px;
+    background-color: pink;
+  }
+
+  #section2 {
+
+  }
+  </style>
+    </head>
+  <body>
+    <br>
+    <br>
+      <div class="container-fluid p-3 my-3 bg-secondary text-white" align="center">
+      <h1>ಕನ್ನಡ ಕೂಟ </h1>
+      <h6>An epitome of everything good in Kannada</h6>
+      </div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">ಕೊಂಡಿಗಳು </a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#demo2">ಹೆಚ್ಚು ತಿಳಿಯಿರಿ </button>
+              <div id="demo2" class="collapse">
+                Website under construction
+              </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#demo1">ಸಂಪರ್ಕ </button>
+              <div id="demo1" class="collapse">
+                Manjunath M <br>
+                bois hostel <br>
+                KR circle
+              </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#demo">ನಮ್ಮ ಬಗ್ಗೆ </button>
+    <div id="demo" class="collapse">
+      ನಮ್ಮ ಬಗ್ಗೆ ಬಾಯಿ ಬಿಟ್ಟು ಬೇರೆ ಹೇಳ್ಬೇಕೇ 
+    </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div>
+      <button onclick="myFunction()">ನಿಮ್ಮನ್ನು ಪರಿಚಿಸಿ </button>
+      <p id="demog"></p>
+    </div>
+        <!-- About Section Button -->
+        <div class="text-center mt-4">
+          <button type="button" data-toggle="collapse"><a class="btn btn-xl btn-primary" href="#section2">Our achievements</a></button>
+        </div>
+       <h3 class="page-section-heading text-center text-uppercase text-secondary mb-0">ಹೆಚ್ಚು ಬೇಡಿಕೆಯ ಪುಸ್ತಕಗಳು </h3>
+       <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+      <!-- Books list
+       Starts from here -->
+      <div style="background: #d4d4aa !important" class="jumbotron">
+      <div class="card-columns">
+        <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://cdn01.sapnaonline.com/bk_images/546/9789384908546.jpg" alt="Card image" height=300px width=200px overflow="hidden">
+        <div class="card-body">
+          <h4 class="card-title">Tejo Tungabadra</h4>
+          <p class="card-text">Vasudendra</p>
+          <a href="#" class="btn btn-primary" style="margin-right: 60px"><span class="spinner-grow spinner-grow-sm"></span>Rs.357</a>
+          <span class="badge badge-success badge-pill">4.9/5</span>
+        </div>
+        </div>
+      <!--stick here what you copied <div class="card-columns">-->  
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://cdn01.sapnaonline.com/bk_images/586/5551234103586.jpg" alt="Card image" height=300px width=200px >
+        <div class="card-body">
+          <h4 class="card-title">Kannada Sahitya Kosha</h4>
+          <p class="card-text">
+              Rajappa Dalavayi <br>
+              </p>
+          <a href="#" class="btn btn-primary" style="margin-right: 60px"><span class="spinner-grow spinner-grow-sm"></span>Rs.500</a>
+          <span class="badge badge-success badge-pill">5/5</span>
+        </div>
+      </div>
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://cdn01.sapnaonline.com/bk_images/353/9788128004353.jpg?param=4314021705" alt="Card image" height=300px width=200px overflow="hidden">
+        <div class="card-body">
+          <h4 class="card-title">Manada Mathu</h4>
+          <p class="card-text">Sudha Murthy</p>
+          <a href="#" class="btn btn-primary" style="margin-right: 60px"><span class="spinner-grow spinner-grow-sm"></span>Rs.133</a>
+          <span class="badge badge-success badge-pill">4/5</span>
+        </div>
+      </div>
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://cdn01.sapnaonline.com/bk_images/570/5551234103570.jpg" alt="Card image" height=300px width=200px overflow="hidden">
+        <div class="card-body">
+          <h4 class="card-title">Jugari Cross</h4>
+          <p class="card-text">KP Tejasvi</p>
+          <a href="#" class="btn btn-primary" style="margin-right: 60px"><span class="spinner-grow spinner-grow-sm"></span>Rs.216</a>
+          <a href=""></a>
+          <span class="badge badge-success badge-pill">4.8/5</span>
+        </div>
+      </div>
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://cdn01.sapnaonline.com/bk_images/723/5551234103723.jpg" alt="Card image" height=300px width=200px overflow="hidden">
+        <div class="card-body">
+          <h4 class="card-title">Kanuru Heggadathi</h4>
+          <p class="card-text">Kuvempu</p>
+          <a href="#" class="btn btn-primary" style="margin-right: 60px"><span class="spinner-grow spinner-grow-sm"></span>Rs.380</a>
+          <span class="badge badge-success badge-pill">5/5</span>
+        </div>
+      </div>
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://cdn01.sapnaonline.com/bk_images/081/9788128022081.jpg?param=1641012304" alt="Card image" height=300px width=200px overflow="hidden">
+        <div class="card-body">
+          <h4 class="card-title">Chomana Dudi</h4>
+          <p class="card-text">Dr. KS Karanth</p>
+          <a href="#" class="btn btn-primary" style="margin-right: 60px"><span class="spinner-grow spinner-grow-sm"></span>Rs.110</a>
+          <span class="badge badge-success badge-pill">4.5/5</span>
+        </div>
+      </div>
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://cdn01.sapnaonline.com/bk_images/707/5551234103707.jpg" alt="Card image" height=300px width=200px overflow="hidden">
+        <div class="card-body">
+          <h4 class="card-title">Nayi Neralu</h4>
+          <p class="card-text">SL Byrappa</p>
+          <a href="#" class="btn btn-primary" style="margin-right: 60px"><span class="spinner-grow spinner-grow-sm"></span>Rs.160</a>
+          <span class="badge badge-success badge-pill">4/5</span>
+        </div>
+      </div>
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="https://cdn01.sapnaonline.com/bk_images/023/9788128008023.jpg?param=4314021705" alt="Card image" height=300px width=200px overflow="hidden">
+        <div class="card-body">
+          <h4 class="card-title">Dollar Sose</h4>
+          <p class="card-text">Sudha Murthy</p>
+          <a href="#" class="btn btn-primary" style="margin-right: 60px"><span class="spinner-grow spinner-grow-sm"></span>Rs.105</a>
+          <span class="badge badge-success badge-pill">4/5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div style="background:#e6b3cc !important" class="jumbotron">
+      <h1>Quote</h1>
+      <blockquote class="blockquote">
+      <p>ಮೊದಲು ಮಾನವನಾಗು</p>
+      <footer class="blockquote-footer"> ರಾಷ್ಟ್ರಕವಿ ಕುವೆಂಪು </footer>
+      </blockquote>
+      <blockquote class="blockquote">
+      <p>ಲವ್ ಅಂದ್ರೆ ಗುಂಡಿಗೆ ಅಲ್ಲ ...feelings</p>
+      <footer class="blockquote-footer">(ಪ್ರೇಮ್) Prem*s</footer>
+      </blockquote>
+      </div>
+      <div class="main" id="section2">
+    <div style="background:#ccffcc !important" class="jumbotron">
+      <h3>ಲಭ್ಯವಿರುವ ಮಾಹಿತಿಗಳ ಅಂಕಿ-ಸಂಖ್ಯೆ </h3>
+      <ul class="list-group">
+         <li class="list-group-item d-flex justify-content-between align-items-center">ಪುಸ್ತಕಗಳು
+          <span class="badge badge-danger badge-pill">09</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+          ಸಿನೆಮಗಳು 
+          <span class="badge badge-danger badge-pill">00</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+          ಧಾರವಾಯಿಗಳು 
+          <span class="badge badge-danger badge-pill">02</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            ಪ್ರೇಕ್ಷಣೀಯ ಸ್ಥಳಗಳು 
+           <span class="badge badge-danger badge-pill">06</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            ಹಾಡುಗಳು 
+           <span class="badge badge-danger badge-pill">132</span>
+          </li>
+      </ul>
+    </div>
+    </div>
+    <h3 class="page-section-heading text-center text-uppercase text-secondary mb-0">ಒಂದೊಳ್ಳೆ ಕನ್ನಡ ಹಾಡು </h3>
+       <div class="divider-custom">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tUvXWQZ_r1w"></iframe>
+    </div>
+    <button type="button" class="btn btn-outline-warning">
+    <span class="spinner-grow spinner-grow-sm"></span>
+      Help</button>  
+    <button type="button" class="btn btn-outline-danger">
+    <span class="spinner-grow spinner-grow-sm"></span>
+      Danger</button>
+      </div>
+   </body>
+  </html>
